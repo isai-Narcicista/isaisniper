@@ -436,13 +436,13 @@ try:
         logging.debug(f"Checking Version")
         self.task = "Github Checker"
         self._print_stats()
-        response = requests.get("https://raw.githubusercontent.com/isai-Narcicista/isaisniper/main/raw")
+        response = requests.get("https://raw.githubusercontent.com/isai-Narcicista/isaisniper/main/version")
         if response.status_code != 200:
             pass
         print(response.text.rstrip())
         if not response.text.rstrip() == self.version:
-                print("NEW UPDATED VERSION PLEASE UPDATE YOUR FILE")
-                print("will continue in 5 seconds")
+                print("NUEVA ACTUALIZACION ENTRA A https://raw.githubusercontent.com/isai-Narcicista/isaisniper/main/main COPIA EL CODIGO Y REMPLAZALO POR ESTE")
+                print("https://raw.githubusercontent.com/isai-Narcicista/isaisniper/main/main")
                 import time
                 time.sleep(5)
         
